@@ -33,4 +33,8 @@ jobs:
           cd client
           npm run build
 
-      # Add more steps here for tests if needed
+
+      - name: Run server tests
+        run: |
+          cd server
+          npm test
